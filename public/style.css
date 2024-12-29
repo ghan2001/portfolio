@@ -464,8 +464,102 @@ section{
     top: 0;
     background: rgb(63, 220, 20);
 }
+
+.project .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+.project .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:crimson;
+    transform: translate(-50%);
+}
+.project .project-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.project .project-content .column{
+    width: calc(50% - 30px);
+}
+.project .project-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.project .project-content .left p{
+    text-align: justify;
+}
+.project .project-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+.project .project-content .left a:hover{
+    color: black;
+    background: none;
+}
+.project .project-content .right .bars{
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px 0px rgb(218, 49, 83);
+}
+.project .project-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    padding:5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.project .project-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.project .project-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.project .project-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(63, 220, 20);
+}
+
+
+
+
+
+
+
+
 .skills-content .right .html::before{
     width: 90%;
+}
+.skills-content .right .css::before{
+    width: 50%;
 }
 .skills-content .right .css::before{
     width: 60%;
@@ -480,7 +574,32 @@ section{
     width: 70%;
 }
 
+.project-content .right .html::before{
+    width: 100%;
+}
+.project-content .right .css::before{
+    width: 50%;
+}
+.project-content .right .css::before{
+    width: 60%;
+}
+.project-content .right .js::before{
+    width: 40%;
+}
+.project-content .right .cpp::before{
+    width: 50%;
+}
+.project-content .right .java::before{
+    width: 70%;
+}
+
 /* ----------Contact Section Styling------------*/
+
+.navbar .logo img {
+    height: 27px;
+    width: 28px;
+    border-radius: 50%;
+}
 
  .contact .title{
      position: relative;
