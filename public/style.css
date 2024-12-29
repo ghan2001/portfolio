@@ -1,0 +1,608 @@
+header{
+          color:red;
+          background-color: antiquewhite;
+          text-align:center;
+}
+
+footer{
+          color: blue;
+          background-color:aliceblue;
+          text-align:center;
+         
+         
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+   
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background:crimson;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(246, 3, 52);
+}
+
+/* all similar content styling codes */
+section{
+    padding: 75px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills,  footer{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*------------- Navbar styling----------- */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgb(247, 248, 248);
+    box-shadow: 1px 0.8px #ece0e0;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background:rgb(207, 31, 66);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
+.navbar.sticky .menu li a{
+    color: white;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color:crimson;
+    font-size: 20px ;
+    transition: all 0.3s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display:inline-block;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+    font-weight: 600;
+}
+.navbar.sticky .menu li a:hover{
+    color:white;
+}
+
+/* toggle btn styling */
+.menu-btn{
+    color: black;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+ 
+
+/*------------- Home Section Styling ---------------*/
+ 
+
+.home .max-width{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px ;
+}
+.home .home-content{
+    margin: 150px 0;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background:crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: black;
+    background: none;
+}
+.home .home-image img{
+    height: 400px;
+    width: 350px;
+    margin-top: 6rem;
+    float: right;
+    border-radius: 1rem;
+}
+
+
+/* ---------- About Section Styling------------- */
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translate(-50%);
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: white;
+    transform: translate(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: black;
+    background: none;
+}
+
+/* ----------Education Styling --------- */
+.education .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+.education .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background:crimson;
+    transform: translate(-50%);
+}
+.education .edu-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education .edu-content .card{
+   text-align: center;
+}
+
+.education .edu-content .box i{
+    font-size: 110px;
+    color:crimson;
+}
+
+.education .edu-content .box .college {
+    color: crimson;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+.education .edu-content .box p{
+    font-size:25px ;
+    margin-top: 23px;
+    font-family: 'Ubuntu', sans-serif;
+
+}    
+
+
+
+
+/*----------- Services Section Styling------------ */
+.services{
+    color:black;
+}
+.services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 220px;
+    height: 3px;
+    background:crimson;
+    transform: translate(-50%);
+}
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    color: black;
+    text-align: center;
+    background: rgb(240 247 247);
+    box-shadow: 1px 0.8px #ece0e0;
+    border-radius: 10px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background:crimson;
+   
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: white;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.services .serv-content .card .text:hover{
+    /* color: white; */
+}
+
+/*-------- Skills Section Styling --------*/
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:crimson;
+    transform: translate(-50%);
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: black;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px 0px rgb(218, 49, 83);
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    padding:5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(63, 220, 20);
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 40%;
+}
+.skills-content .right .cpp::before{
+    width: 50%;
+}
+.skills-content .right .java::before{
+    width: 70%;
+}
+
+/* ----------Contact Section Styling------------*/
+
+ .contact .title{
+     position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+  }
+  .contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background:crimson;
+    transform: translate(-50%);
+}
+  .contact .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+   .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: crimson;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 15px;
+    color: rgb(103, 31, 45);
+  }
+  .contact .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 25px;
+    font-weight: 600;
+    color: crimson;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+    border-radius: 1px solid crimson;
+  }
+  .right-side .button input[type="button"]{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+   color: black;
+   background:white ;
+  }
+
+
+
+
+
+
+/*----------- Footer Section Styling----------- */
+footer{
+    background: crimson;
+    padding: 15px 23px;
+    color: white;
+    text-align: center;
+}
+/* footer span a{
+    color: black;
+    text-decoration: none;
+} */

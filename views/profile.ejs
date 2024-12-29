@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+          <title>Document</title>
+          <script>
+            $(document).ready(function () {
+              console.log('hello');
+              $('#userdatatable').DataTable({
+                  
+                    paging: true,          // Enable pagination
+                    searching: true,       // Enable search bar
+                    ordering: true,        // Enable column sorting
+                    info: true,            // Show table information
+                    responsive: true       // Makes the table responsive
+                  });
+            });
+          </script>
+                  <style>
+                  
+                    .userdatatable {
+                    width: 100%; /* Makes the table span the full width of the container */
+                    border-collapse: collapse; /* Removes space between table cells */
+                    border: 1px solid #ddd; /* Adds a border for the table */
+                  }
+
+                  .userdatatable th, .userdatatable td {
+                    padding: 8px; /* Adds padding for readability */
+                    text-align: left; /* Aligns text to the left */
+                    border: 1px solid #ddd; /* Adds a border around cells */
+                  }
+
+                    .userdatatable th {
+                      background-color: #f4f4f4; /* Adds a light background to the header */
+                    }
+ 
+          </style>
+</head>
+<body>
+    <h1>profile ghanshyam s</h1>
+   <table class="userdatatable" id="userdatatable">
+    <thead>
+      <th>name</th>
+      <th>age</th>
+      <th>phone number</th>
+      <th>address</th>
+      <th>Action</th>
+    </thead>
+   
+    <tbody>
+      
+      <%data.forEach((item)=>{%> 
+             
+          
+        <td><%=item.name%></td>
+        <td><%=item.email%></td>
+        <td><%=item.phone%></td>
+        <td><%=item.address%></td>
+        <td class="delete">delete</td>
+        
+     
+     
+      </tbody>
+    <%})%>
+ 
+   </table>
+  
+
+        
+     
+</body>
+</html>

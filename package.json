@@ -1,0 +1,27 @@
+{
+  "name": "tut",
+  "version": "1.0.0",
+  "description": "ghanshyam prajapati firstpackage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ghanshyam"
+  ],
+  "author": "ghanshyam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "chunk": "^0.0.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.21.2",
+    "js": "^0.1.0",
+    "mysql": "^2.18.1",
+    "node": "^21.6.1",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.3"
+  }
+}
