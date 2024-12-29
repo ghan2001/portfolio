@@ -12,7 +12,7 @@ app.get("/", (req, resp) => {
 app.use(express.static(public_path));
 app.set("view engine", "ejs");
 
-//helloo
+
 
 app.get("/about", (req, resp) => {
   resp.sendFile(`${public_path}/about.html`);
